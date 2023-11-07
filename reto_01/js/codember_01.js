@@ -5,7 +5,7 @@ let respuesta = []
 for (animal of animales) {
     for (palabra of palabras) {
         if (palabra == animal) {
-            let newList = palabras.filter(function (animal) {return animal.includes(palabra)});
+            let newList = palabras.filter(( animal ) => animal.includes( palabra ));
             respuesta.push(animal, ...new String(newList.length));
             break;  
         };
