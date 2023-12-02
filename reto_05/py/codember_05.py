@@ -7,6 +7,6 @@ for value in values:
     id, username, email, age, location = value.split(',')
 
     if (id and not id.isalnum()) or (username and not username.isalnum()) or (email and not re.findall(r'[A-z0-9]+@[A-z0-9]+\.com', email) or not email) or (age and not age.isnumeric()):
-        print(id, username, email, age, location)
+        print(username[0], end='')
     else:
         continue
